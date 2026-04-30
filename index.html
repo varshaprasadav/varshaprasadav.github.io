@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VARSHA PRASAD A V - Resume</title>
 
     <style>
+
         *{
             margin:0;
             padding:0;
@@ -14,34 +15,35 @@
         }
 
         body{
-            background: linear-gradient(to right, #ffe6e6, #fff5f5);
+            background: linear-gradient(to right, #ffe6f0, #fff5f8);
             padding:40px;
             color:#333;
         }
 
         .container{
-            max-width:900px;
+            max-width:850px;
             margin:auto;
             background:white;
-            padding:35px;
-            border-radius:15px;
-            box-shadow:0 4px 15px rgba(0,0,0,0.2);
+            padding:40px;
+            border-radius:18px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.15);
         }
 
         .header{
             text-align:center;
-            padding-bottom:20px;
-            border-bottom:3px solid #ff9999;
+            padding-bottom:25px;
+            border-bottom:2px solid #ffb3c6;
         }
 
         .header h1{
             color:#cc0066;
-            font-size:40px;
-            margin-bottom:10px;
+            font-size:42px;
+            letter-spacing:1px;
+            margin-bottom:12px;
         }
 
-        .header p{
-            font-size:18px;
+        .contact{
+            font-size:16px;
             color:#555;
         }
 
@@ -49,64 +51,62 @@
             color:#cc0066;
             margin-top:30px;
             margin-bottom:15px;
-            border-left:6px solid #ff9999;
-            padding-left:10px;
+            font-size:24px;
+            position:relative;
         }
 
-        .objective{
+        h2::after{
+            content:"";
+            width:50px;
+            height:3px;
+            background:#ff99bb;
+            position:absolute;
+            left:0;
+            bottom:-6px;
+            border-radius:5px;
+        }
+
+        p{
             line-height:1.8;
             font-size:17px;
             text-align:justify;
         }
 
-        table{
-            width:100%;
-            border-collapse:collapse;
-            margin-top:10px;
+        .education-item,
+        .internship-item,
+        .language-item{
+            background:#fff0f5;
+            padding:15px 20px;
+            margin-bottom:15px;
+            border-left:5px solid #ff80aa;
+            border-radius:10px;
         }
 
-        table th{
-            background:#ffb3b3;
-            color:#000;
-            padding:12px;
+        .education-item h3{
+            color:#b30059;
+            margin-bottom:5px;
         }
 
-        table td{
-            padding:12px;
-            text-align:center;
-        }
-
-        table, th, td{
-            border:1px solid #ddd;
-        }
-
-        tr:nth-child(even){
-            background:#fff0f0;
+        .education-item span{
+            color:#666;
+            font-size:15px;
         }
 
         ul{
-            margin-left:25px;
-            line-height:2;
+            margin-left:20px;
+            line-height:1.8;
             font-size:17px;
         }
 
         .footer{
             text-align:center;
-            margin-top:30px;
-            color:#777;
+            margin-top:35px;
+            color:#888;
             font-size:14px;
         }
 
-        .contact{
-            margin-top:8px;
-            font-size:16px;
-        }
-
-        .contact span{
-            margin:0 10px;
-        }
-
     </style>
+
 </head>
 
 <body>
@@ -117,70 +117,56 @@
             <h1>VARSHA PRASAD A V</h1>
 
             <div class="contact">
-                <span>📧 varshaprasad2019@gmail.com</span>
+                📧 varshaprasad2019@gmail.com
             </div>
         </div>
 
+
         <h2>Objective</h2>
 
-        <p class="objective">
+        <p>
             To succeed in an environment of growth and excellence and earn a position
             that provides me job satisfaction and self-development while helping me
             achieve personal as well as organizational goals.
         </p>
 
+
         <h2>Education</h2>
 
-        <table>
-            <tr>
-                <th>SL NO</th>
-                <th>Course</th>
-                <th>Institution</th>
-                <th>Year of Passing</th>
-            </tr>
+        <div class="education-item">
+            <h3>B.E</h3>
+            <span>Narayanaguru College • 2022</span>
+        </div>
 
-            <tr>
-                <td>1</td>
-                <td>B.E</td>
-                <td>Narayanaguru College</td>
-                <td>2022</td>
-            </tr>
+        <div class="education-item">
+            <h3>Higher Secondary</h3>
+            <span>BVB • 2015</span>
+        </div>
 
-            <tr>
-                <td>2</td>
-                <td>Higher Secondary</td>
-                <td>BVB</td>
-                <td>2015</td>
-            </tr>
+        <div class="education-item">
+            <h3>SSLC</h3>
+            <span>SV • 2014</span>
+        </div>
 
-            <tr>
-                <td>3</td>
-                <td>SSLC</td>
-                <td>SV</td>
-                <td>2014</td>
-            </tr>
-        </table>
 
         <h2>Internships</h2>
 
-        <ul>
-            <li>
-                Industrial Training in Basic Telecom from BSNL (Govt. of India)
-            </li>
+        <div class="internship-item">
+            Industrial Training in Basic Telecom from BSNL (Govt. of India)
+        </div>
 
-            <li>
-                Internship Training in Web Technology specialized in HTML, CSS,
-                and Bootstrap from Trinity Software Technology.
-            </li>
-        </ul>
+        <div class="internship-item">
+            Internship Training in Web Technology specialized in HTML, CSS,
+            and Bootstrap from Trinity Software Technology.
+        </div>
+
 
         <h2>Languages Known</h2>
 
-        <ul>
-            <li>English</li>
-            <li>Malayalam</li>
-            <li>Tamil</li>
-        </ul>
+        <div class="language-item">English</div>
+        <div class="language-item">Malayalam</div>
+        <div class="language-item">Tamil</div>
+
 
         <div class="footer">
             © 2026 Varsha Prasad A V
