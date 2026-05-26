@@ -1,1 +1,285 @@
 
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      overflow-x: hidden;
+    }
+
+    .glow {
+      box-shadow: 0 0 25px rgba(99, 102, 241, 0.4);
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #818cf8, #22d3ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .floating {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .bg-blur {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.5;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body class="text-white min-h-screen relative">
+
+  <!-- Background Blur -->
+  <div class="bg-blur bg-purple-500 top-0 left-0"></div>
+  <div class="bg-blur bg-cyan-400 bottom-0 right-0"></div>
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+
+    <h1 class="text-2xl font-bold gradient-text">
+      MyPortfolio
+    </h1>
+
+    <div class="hidden md:flex gap-8 text-gray-300">
+      <a href="#about" class="hover:text-white transition">About</a>
+      <a href="#skills" class="hover:text-white transition">Skills</a>
+      <a href="#contact" class="hover:text-white transition">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+
+      <p class="text-cyan-400 text-lg mb-3">
+        Hello 👋
+      </p>
+
+      <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+        I'm <span class="gradient-text">VARSHA PRASAD A V</span>
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-8 max-w-xl">
+        Web Developer • Blockchain Enthusiast • Smart Contract Builder.
+        I create beautiful websites, Web3 apps, and futuristic user experiences.
+      </p>
+
+    </div>
+
+    <div class="flex justify-center">
+
+      <div class="glass rounded-[40px] p-8 floating glow max-w-md w-full">
+
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+          class="rounded-3xl w-full h-72 object-cover"
+          alt="Developer"
+        />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto px-8 py-20">
+
+    <div class="glass rounded-3xl p-10">
+
+      <h2 class="text-4xl font-bold mb-6 gradient-text">
+        About Me
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed">
+        Full-Stack Web Developer with experience in building secure and responsive web applications using React.js, Node.js,
+        Express.js, MongoDB, JavaScript, HTML, and CSS. Knowledgeable in REST APIs, Docker deployment, and blockchain
+        development with Solidity and smart contracts. Passionate about learning new technologies and creating user-friendly
+        applications.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="max-w-7xl mx-auto px-8 py-20">
+
+    <h2 class="text-5xl font-bold mb-12 text-center gradient-text">
+      Skills
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Programming Languages -->
+      <div class="glass rounded-3xl p-8 hover:scale-105 transition duration-300">
+
+        <div class="text-5xl mb-5">
+          💻
+        </div>
+
+        <h3 class="text-2xl font-semibold mb-4">
+          Programming Languages
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="bg-indigo-600 px-4 py-2 rounded-xl">
+            HTML
+          </span>
+
+          <span class="bg-indigo-600 px-4 py-2 rounded-xl">
+            JavaScript
+          </span>
+
+          <span class="bg-indigo-600 px-4 py-2 rounded-xl">
+            C++
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- Frameworks -->
+      <div class="glass rounded-3xl p-8 hover:scale-105 transition duration-300">
+
+        <div class="text-5xl mb-5">
+          ⚡
+        </div>
+
+        <h3 class="text-2xl font-semibold mb-4">
+          Frameworks & Libraries
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="bg-cyan-600 px-4 py-2 rounded-xl">
+            Tailwind CSS
+          </span>
+
+          <span class="bg-cyan-600 px-4 py-2 rounded-xl">
+            React.js
+          </span>
+
+          <span class="bg-cyan-600 px-4 py-2 rounded-xl">
+            Node.js
+          </span>
+
+          <span class="bg-cyan-600 px-4 py-2 rounded-xl">
+            Bootstrap
+          </span>
+
+          <span class="bg-cyan-600 px-4 py-2 rounded-xl">
+            Express.js
+          </span>
+
+          <span class="bg-cyan-600 px-4 py-2 rounded-xl">
+            MongoDB
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- Tools -->
+      <div class="glass rounded-3xl p-8 hover:scale-105 transition duration-300">
+
+        <div class="text-5xl mb-5">
+          🛠
+        </div>
+
+        <h3 class="text-2xl font-semibold mb-4">
+          Tools & Platforms
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="bg-purple-600 px-4 py-2 rounded-xl">
+            Docker
+          </span>
+
+          <span class="bg-purple-600 px-4 py-2 rounded-xl">
+            GitHub
+          </span>
+
+          <span class="bg-purple-600 px-4 py-2 rounded-xl">
+            Postman
+          </span>
+
+          <span class="bg-purple-600 px-4 py-2 rounded-xl">
+            REST APIs
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-5xl mx-auto px-8 py-20">
+
+    <div class="glass rounded-3xl p-10 text-center">
+
+      <h2 class="text-5xl font-bold mb-6 gradient-text">
+        Contact
+      </h2>
+
+      <p class="text-gray-300 text-lg mb-8">
+        Want to collaborate or build a project together?
+      </p>
+
+      <a
+        href="mailto:yourmail@gmail.com"
+        class="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-4 rounded-2xl font-bold transition glow inline-block"
+      >
+        Send Email
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-400 py-8 border-t border-white/10 mt-10">
+    © 2026 VARSHA PRASAD A V • Built with HTML + Tailwind CSS
+  </footer>
+
+</body>
+</html>
